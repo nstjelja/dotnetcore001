@@ -1,7 +1,9 @@
 using System;
 
 namespace Start{
+
     public class Requires{
+        
         public static void NotNull(object argument){
             if (argument != null) return;
 
