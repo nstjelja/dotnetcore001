@@ -1,0 +1,15 @@
+{
+    "version": "0.1.0",
+    "command": "build.cmd",
+    "isShellCommand": true,
+    "args": ["${workspaceRoot}"],
+    "showOutput": "always",
+    "tasks": [
+        {
+            "isBuildCommand": true,
+            "echoCommand": true,
+            "showOutput": "always",
+            "taskName": "build all"
+        }
+    ]
+}
