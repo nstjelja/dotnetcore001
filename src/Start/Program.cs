@@ -18,7 +18,9 @@ namespace Start
             var firstName =  args[0];
             var lastName = args[1];
 
-            Console.WriteLine("Hello World!");
+            var nikola = new Person(firstName, lastName, new DateTime(1981,12,1));
+
+            Console.WriteLine($"Hello {nikola}");
         }
     }
 }

@@ -2606,9 +2606,12 @@
           "lib/netstandard1.1/xunit.runner.utility.dotnet.dll": {}
         }
       },
-      "People/1.0.0": {
+      "Start/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v1.1"
+        "framework": ".NETCoreApp,Version=v1.1",
+        "dependencies": {
+          "Microsoft.NETCore.App": "1.1.0"
+        }
       }
     }
   },
@@ -7785,19 +7788,19 @@
         "xunit.runner.utility.nuspec"
       ]
     },
-    "People/1.0.0": {
+    "Start/1.0.0": {
       "type": "project",
-      "path": "../../src/People/project.json"
+      "path": "../../src/Start/project.json"
     }
   },
   "projectFileDependencyGroups": {
     "": [
+      "Start >= 1.0.0-*",
       "dotnet-test-xunit >= 2.2.0-preview2-build1029",
       "xunit >= 2.2.0-beta2-build3300"
     ],
     ".NETCoreApp,Version=v1.1": [
-      "Microsoft.NETCore.App >= 1.1.0",
-      "People >= 1.0.0-*"
+      "Microsoft.NETCore.App >= 1.1.0"
     ]
   },
   "tools": {},
