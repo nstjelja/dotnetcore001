@@ -9,16 +9,12 @@ namespace Start
     {
         public static void Main(string[] args)
         {
-            Requires.NotNull(args);
-
-            if (args.Length < 2){
-                throw new ArgumentException($"{nameof(args)} can't be less then two");
-            }
-
-            var firstName =  args[0];
-            var lastName = args[1];
-
-            var nikola = new Person(firstName, lastName, new DateTime(1981,12,1));
+        
+            var nikola = new Person("Nikola", "Stjelja", new DateTime(1981,12,1));
+            var milica = new Person("Milica","Cuckovic", new DateTime(1991, 4,26));
+            var family = new Family();
+            family.AddFather(nikola);
+            family.AddMother(milica);
 
             Console.WriteLine($"Hello {nikola}");
         }

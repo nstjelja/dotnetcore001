@@ -13,11 +13,11 @@ namespace People {
         }
 
         public void AddFather(Person father){
-
+            Father = father;
         }
 
         public void AddMother(Person mother){
-            
+            Mother = mother;
         }
 
       
